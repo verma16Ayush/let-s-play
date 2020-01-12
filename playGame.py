@@ -76,7 +76,7 @@ def driver():
             elif win and player == p2:
                 print('player 2 has won')
                 break
-            elif len(available_inputs)==1:
+            elif not win and len(available_inputs)==1:
                 print('Game tie.')
                 break
         play = (bool(int(input('Do you want to play again?\n 1=yes\n 0=no: '))))
